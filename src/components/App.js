@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MapList from './MapList';
 
 class App extends Component {
   render() {
@@ -6,6 +7,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <p>HELLO WORLD!</p>
+          <MapList/>
         </header>
       </div>
     );
