@@ -44,6 +44,7 @@ export default class MapList extends Component{
 
     }
 
+//this button helps when we want or do not want a list of items to see
     showImportantAreas = () => {
         this.setState({ show: !this.state.show });
     }
@@ -53,6 +54,7 @@ export default class MapList extends Component{
       this.setState({'locationValues' : this.props.locations })
     }
 
+//render method for our MapList component
   render(){
 
     const List = this.state.locationValues.map(function(item, index){
@@ -64,6 +66,7 @@ export default class MapList extends Component{
         />
       );
     }, this);
+    
     return(
       <div className="searchBox">
 
