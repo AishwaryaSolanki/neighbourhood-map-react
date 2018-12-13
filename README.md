@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+For better experiences, Use your own Google API keys as well as your own generated Foursquare client key and ids.
+
 ## Available Scripts
 
 In the project directory, you can run:
