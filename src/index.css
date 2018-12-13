@@ -12,3 +12,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.searchBox {
+    z-index: 1;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    overflow-y: hidden;
+}
+
+.searchBar {
+    width: 320px;
+    padding: 5px;
+    overflow-y: hidden;
+}
+
+ul {
+    background: white;
+    padding: 0px;
+    margin: 0;
+    width: 320px;
+    overflow-y: hidden;
+}
+
+.mapButton{
+    max-width: 320px;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    background-color: 	white;
+    color: black;
+}
+
+.mapButton:hover{
+    background-color: #6c757d;
+    color: white;
+}
+
+.button {
+    text-align: center;
+    padding: 5px;
+    border: none;
+    color: black;
+    background-color: 	white;
+    cursor: pointer;
+}
+.toggleButton{
+  width: 320px;
+}
