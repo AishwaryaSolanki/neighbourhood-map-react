@@ -172,8 +172,8 @@ export default class App extends Component {
   getMarkerInformation = (marker) => {
 
         var that = this;
-        var clientId = "TPIDDHBKB2QFBWEV2MPDOFGUSWXCXGAA5IVOWEMN5ASR3UJW";
-        var clientSecretKey = "4HB1ZZJBVXC3F0BREBPSGXYK0VZ5ALS4XRNJZSBP1JROG0DE";
+        var clientId = "RQDEKO1PWMOLOUQKXB5QNW54WU3EN5IN3E3Z530FKGGKCUVR";
+        var clientSecretKey = "N11HOVWEAGZXXOUL0G4BGTVF4NKH5VPZX4WS41S5FOODNVHS";
         var URL = "https://api.foursquare.com/v2/venues/search?client_id=" + clientId + "&client_secret=" + clientSecretKey + "&v=20130815&ll=" + marker.getPosition().lat() + "," + marker.getPosition().lng() + "&limit=1";
 
         fetch(URL)
