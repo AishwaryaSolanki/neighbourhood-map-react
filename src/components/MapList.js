@@ -27,20 +27,20 @@ export default class MapList extends Component{
 //this function filters the location values
     filterAllLocations = (event) => {
 
-        const {LocationValue} = event.target;
+        const {value} = event.target;
         var locationArray = [];
         this.props.closeInfoWindow();
-
+        console.log(value);
         this.props.locations.forEach(function (locationItem) {
-            if (locationItem.fullname.toLowerCase().indexOf(LocationValue.toLowerCase()) >= 0) {
+            if (locationItem.fullname.toLowerCase().indexOf(value.toLowerCase()) >= 0) {
                 locationItem.marker.setVisible(true);
-                locationItem.push(locationItem);
+                locationArray.push(locationItem);
             } else {
                 locationItem.marker.setVisible(false);
             }
         });
 //filtered values are then helpful in changing the state
-        this.setState({ 'locationValues': locationArray, 'queryString': LocationValue });
+        this.setState({ 'locationValues': locationArray, 'queryString': value });
 
     }
 
