@@ -4,7 +4,7 @@ import MapItem from './MapItem';
 export default class MapList extends Component{
 
 //Defult constructor props defined
-  constructor(props){
+    constructor(props){
 
       super(props);
 //defining values of the state parameters
@@ -66,8 +66,11 @@ export default class MapList extends Component{
         />
       );
     }, this);
-    
+
     return(
+      <div className="container">
+      <div className="row">
+      <div className="col-sm-2">
       <div className="searchBox">
 
           <input
@@ -86,11 +89,14 @@ export default class MapList extends Component{
             </ul>
 
             <button
-            className="toggleButton"
+            className="toggleButton btn btn-primary"
             onClick={this.showImportantAreas}>
-              Show important areas around
+              Show/Hide important areas around
             </button>
 
+      </div>
+      </div>
+      </div>
       </div>
     );
   }
